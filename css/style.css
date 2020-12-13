@@ -1,0 +1,151 @@
+/* font-family: 'Langar', cursive;
+font-family: 'Russo One', sans-serif; */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/bg-Labol.jpg);
+    background-size: cover;
+    background-origin: border-box;
+    position: relative;
+}
+.wrapper {
+    width: 85%;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 80px;
+    padding-top: 60px;
+}
+.header img {
+    width: 200px;
+}
+button {
+    width: 150px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid cornsilk;
+    font-size: 120%;
+    color: cornsilk;
+    border-radius: 30px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-family: 'Hammersmith One', sans-serif;
+}
+button:hover {
+    background-color: cornsilk;
+    color: grey;
+}
+.main-content {
+    position: absolute;
+    padding-left: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.main-content small {
+    font-size: 30px;
+    color: cornsilk;
+    font-family: 'Hammersmith One', sans-serif;
+}
+.main-content h1 {
+    color: cornsilk;
+    font-size: 80px;
+    margin: 0;
+    font-family: 'Russo One', sans-serif;
+}
+.side-bar {
+    width: 60px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(#c9622b, #307e6e);
+}
+.menu {
+    display: block;
+    width: 25px;
+    margin: 40px auto 0;
+    cursor: pointer;
+}
+.social-link {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+}
+.useful-link {
+    text-align: center;
+    position: absolute;
+    bottom: 60px;
+}
+.social-link img, .useful-link img {
+    width: 40px;
+    margin: 20px auto 0;
+    cursor: pointer;
+}
+.bubbles {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: -70px;
+}
+.bubbles img {
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+
+@keyframes bubble {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-80vh);
+    }
+}
+
+.bubbles img:nth-child(1) {
+    animation-delay: 0s;
+    width: 30px;
+}
+.bubbles img:nth-child(2) {
+    animation-delay: 1s;
+    width: 70px;
+}
+.bubbles img:nth-child(3) {
+    animation-delay: 0.5s;
+    width: 35px;
+}
+.bubbles img:nth-child(4) {
+    animation-delay: 1.5s;
+    width: 45px;
+}
+.bubbles img:nth-child(5) {
+    animation-delay: 1s;
+    width: 60px;
+}
+.bubbles img:nth-child(6) {
+    animation-delay: 0.5s;
+    width: 40px;
+}
+.bubbles img:nth-child(7) {
+    animation-delay: 1.5s;
+    width: 35px;
+}
