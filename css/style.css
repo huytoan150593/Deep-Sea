@@ -30,6 +30,10 @@ body {
 .header img {
     width: 200px;
 }
+.header a {
+    text-decoration: none;
+    color: cornsilk;
+}
 button {
     width: 150px;
     height: 50px;
